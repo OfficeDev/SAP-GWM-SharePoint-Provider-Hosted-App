@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityContainer
+    Name="ContosoMotorsCarInventory">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <QueryOperation
+      Name="GetFilteredCarInventory"
+      ReturnType="InventoryItem*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="InventoryItems" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="searchParam"
+        ParameterType=":String?" />
+      <QueryOperationParameter
+        Name="sortColumn"
+        ParameterType=":String?" />
+      <QueryOperationParameter
+        Name="sortOrder"
+        ParameterType=":Int32?" />
+      <QueryOperationParameter
+        Name="pageParam"
+        ParameterType=":Int32?" />
+    </QueryOperation>
+  </EntityContainer>
+  <DataService
+    Name="ContosoMotorsCarInventoryDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <QueryOperationMapping
+      Operation="GetFilteredCarInventory">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetFilteredCarInventory" />
+        <WcfRiaQueryOperationParameter
+          Name="searchParam"
+          QueryOperationParameter="ContosoMotorsCarInventory/Members[GetFilteredCarInventory]/Parameters[searchParam]" />
+        <WcfRiaQueryOperationParameter
+          Name="sortColumn"
+          QueryOperationParameter="ContosoMotorsCarInventory/Members[GetFilteredCarInventory]/Parameters[sortColumn]" />
+        <WcfRiaQueryOperationParameter
+          Name="sortOrder"
+          QueryOperationParameter="ContosoMotorsCarInventory/Members[GetFilteredCarInventory]/Parameters[sortOrder]" />
+        <WcfRiaQueryOperationParameter
+          Name="pageParam"
+          QueryOperationParameter="ContosoMotorsCarInventory/Members[GetFilteredCarInventory]/Parameters[pageParam]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+  </DataService>
+</ServiceApplication>

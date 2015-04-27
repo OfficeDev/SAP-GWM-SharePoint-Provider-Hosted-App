@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ContosoMotorsPictureLibraryStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ContosoMotorsPictureLibraryStore">
+    <EntitySet Name="ContosoMotorsPictureLibrary" EntityType="ContosoMotorsPictureLibraryStore.ContosoMotorsPicture" store:Type="Tables" Schema="dbo" Table="ContosoMotorsPictureLibraryItem" />
+    <EntitySet Name="UserInformationList" EntityType="ContosoMotorsPictureLibraryStore.UserInformationList" store:Type="Tables" Schema="dbo" Table="UserInformationListItem" />
+    <AssociationSet Name="ContosoMotorsPicture_UserInformationList" Association="ContosoMotorsPictureLibraryStore.ContosoMotorsPicture_UserInformationList">
+      <End Role="CreatedBy" EntitySet="UserInformationList" />
+      <End Role="ContosoMotorsPicture" EntitySet="ContosoMotorsPictureLibrary" />
+    </AssociationSet>
+    <AssociationSet Name="ContosoMotorsPicture_UserInformationList1" Association="ContosoMotorsPictureLibraryStore.ContosoMotorsPicture_UserInformationList1">
+      <End Role="ModifiedBy" EntitySet="UserInformationList" />
+      <End Role="ContosoMotorsPicture" EntitySet="ContosoMotorsPictureLibrary" />
+    </AssociationSet>
+    <AssociationSet Name="ContosoMotorsPicture_UserInformationList2" Association="ContosoMotorsPictureLibraryStore.ContosoMotorsPicture_UserInformationList2">
+      <End Role="CheckedOutTo" EntitySet="UserInformationList" />
+      <End Role="ContosoMotorsPicture" EntitySet="ContosoMotorsPictureLibrary" />
+    </AssociationSet>
+    <AssociationSet Name="UserInformationListItem_CreatedBy" Association="ContosoMotorsPictureLibraryStore.UserInformationListItem_CreatedBy">
+      <End Role="CreatedBy" EntitySet="UserInformationList" />
+      <End Role="UserInformationListItem" EntitySet="UserInformationList" />
+    </AssociationSet>
+    <AssociationSet Name="UserInformationListItem_ModifiedBy" Association="ContosoMotorsPictureLibraryStore.UserInformationListItem_ModifiedBy">
+      <End Role="ModifiedBy" EntitySet="UserInformationList" />
+      <End Role="UserInformationListItem" EntitySet="UserInformationList" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ContosoMotorsPicture">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="ContentTypeID" Type="nvarchar(max)" />
+    <Property Name="PictureWidth" Type="int" />
+    <Property Name="PictureHeight" Type="int" />
+    <Property Name="DatePictureTaken" Type="datetime" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Keywords" Type="nvarchar(max)" />
+    <Property Name="StockID" Type="nvarchar" MaxLength="255" />
+    <Property Name="ContentType" Type="nvarchar(max)" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Modified" Type="datetime" />
+    <Property Name="CopySource" Type="nvarchar(max)" />
+    <Property Name="ApprovalStatus" Type="nvarchar(max)" />
+    <Property Name="Path" Type="nvarchar(max)" />
+    <Property Name="VirusStatus" Type="nvarchar(max)" />
+    <Property Name="IsCurrentVersion" Type="bit" />
+    <Property Name="Owshiddenversion" Type="int" />
+    <Property Name="Version" Type="nvarchar(max)" />
+    <Property Name="ContactPhoto" Type="nvarchar(max)" />
+    <Property Name="FullImageUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="ThumbnailUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="StockNo" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedById" Type="int" />
+    <Property Name="ModifiedById" Type="int" />
+    <Property Name="CheckedOutToId" Type="int" />
+  </EntityType>
+  <EntityType Name="UserInformationList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="ContentType" Type="nvarchar(max)" />
+    <Property Name="ContentTypeID" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Account" Type="nvarchar(max)" />
+    <Property Name="WorkEmail" Type="nvarchar(max)" />
+    <Property Name="MobilePhone" Type="nvarchar" MaxLength="127" />
+    <Property Name="AboutMe" Type="nvarchar(max)" />
+    <Property Name="SIPAddress" Type="nvarchar(max)" />
+    <Property Name="IsSiteAdmin" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="Hidden" Type="bit" />
+    <Property Name="Picture" Type="nvarchar(max)" />
+    <Property Name="Department" Type="nvarchar(max)" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="FirstName" Type="nvarchar(max)" />
+    <Property Name="LastName" Type="nvarchar(max)" />
+    <Property Name="WorkPhone" Type="nvarchar(max)" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+    <Property Name="WebSite" Type="nvarchar(max)" />
+    <Property Name="AskMeAbout" Type="nvarchar(max)" />
+    <Property Name="Office" Type="nvarchar(max)" />
+    <Property Name="PictureTimestamp" Type="nvarchar(max)" />
+    <Property Name="PicturePlaceholderState" Type="int" />
+    <Property Name="PictureExchangeSyncState" Type="int" />
+    <Property Name="Modified" Type="datetime" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Owshiddenversion" Type="int" />
+    <Property Name="Version" Type="nvarchar(max)" />
+    <Property Name="Path" Type="nvarchar(max)" />
+    <Property Name="CreatedById" Type="int" />
+    <Property Name="ModifiedById" Type="int" />
+  </EntityType>
+  <Association Name="ContosoMotorsPicture_UserInformationList">
+    <End Role="CreatedBy" Type="ContosoMotorsPictureLibraryStore.UserInformationList" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Unset" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="ContosoMotorsPicture" Type="ContosoMotorsPictureLibraryStore.ContosoMotorsPicture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CreatedBy">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ContosoMotorsPicture">
+        <PropertyRef Name="CreatedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ContosoMotorsPicture_UserInformationList1">
+    <End Role="ModifiedBy" Type="ContosoMotorsPictureLibraryStore.UserInformationList" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Unset" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="ContosoMotorsPicture" Type="ContosoMotorsPictureLibraryStore.ContosoMotorsPicture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ModifiedBy">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ContosoMotorsPicture">
+        <PropertyRef Name="ModifiedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ContosoMotorsPicture_UserInformationList2">
+    <End Role="CheckedOutTo" Type="ContosoMotorsPictureLibraryStore.UserInformationList" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Unset" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="ContosoMotorsPicture" Type="ContosoMotorsPictureLibraryStore.ContosoMotorsPicture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CheckedOutTo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ContosoMotorsPicture">
+        <PropertyRef Name="CheckedOutToId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserInformationListItem_CreatedBy">
+    <End Role="CreatedBy" Type="ContosoMotorsPictureLibraryStore.UserInformationList" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="UserInformationListItem" Type="ContosoMotorsPictureLibraryStore.UserInformationList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CreatedBy">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserInformationListItem">
+        <PropertyRef Name="CreatedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserInformationListItem_ModifiedBy">
+    <End Role="ModifiedBy" Type="ContosoMotorsPictureLibraryStore.UserInformationList" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="UserInformationListItem" Type="ContosoMotorsPictureLibraryStore.UserInformationList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ModifiedBy">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserInformationListItem">
+        <PropertyRef Name="ModifiedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BoxXDataStudio", "BoxXDataStudio", "{AE5739D2-6E4D-4B9A-A46C-CD8EACE8D546}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SellerDashboardStudio", "SellerDashboardStudio", "{932294A8-27CA-4CAD-AA33-F97BEED8EF61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2B06D3A1-BED7-4BD9-8AFC-01447EF593A5}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{581633EB-B896-402F-8E60-36F3DA191C85}") = "SellerDashboard", "SellerDashboard\SellerDashboard.lsxtproj", "{171A50BC-53D8-45F7-8E07-B7DE1A477864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SellerDashboard.Server", "SellerDashboard\SellerDashboard.Server\SellerDashboard.Server.csproj", "{AA27A761-D2B6-4A73-9A04-A70BB32D6F7D}"
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "SellerDashboard.HTMLClient", "SellerDashboard\SellerDashboard.HTMLClient\SellerDashboard.HTMLClient.jsproj", "{855F1CC8-1274-47A8-93C0-EF2F39839D47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AADAuthLib", "SellerDashboard\AADAuthLib\AADAuthLib.csproj", "{3B20A08E-907A-42E0-974D-9BC3023970BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarInventoryBoxXDataOperation", "SellerDashboard\CarInventoryBoxXDataOperation\CarInventoryBoxXDataOperation.csproj", "{14982A3C-5DDA-4656-953A-E1B93A921EF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxXDataService", "SellerDashboard\BoxXDataService\BoxXDataService.csproj", "{505C1593-4961-48BC-93C4-6EF8EB48D60B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarInventoryModel", "SellerDashboard\CarInventoryModel\CarInventoryModel.csproj", "{74617B8F-78BD-4BF6-B9A3-A8CB8CA1CF98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SellerDashboard.SharePoint", "SellerDashboard\SellerDashboard.SharePoint\SellerDashboard.SharePoint.csproj", "{B6F3C0DA-72E4-4095-9FD0-08652248EE0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{171A50BC-53D8-45F7-8E07-B7DE1A477864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171A50BC-53D8-45F7-8E07-B7DE1A477864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171A50BC-53D8-45F7-8E07-B7DE1A477864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171A50BC-53D8-45F7-8E07-B7DE1A477864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA27A761-D2B6-4A73-9A04-A70BB32D6F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA27A761-D2B6-4A73-9A04-A70BB32D6F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA27A761-D2B6-4A73-9A04-A70BB32D6F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA27A761-D2B6-4A73-9A04-A70BB32D6F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855F1CC8-1274-47A8-93C0-EF2F39839D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855F1CC8-1274-47A8-93C0-EF2F39839D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855F1CC8-1274-47A8-93C0-EF2F39839D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855F1CC8-1274-47A8-93C0-EF2F39839D47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B20A08E-907A-42E0-974D-9BC3023970BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B20A08E-907A-42E0-974D-9BC3023970BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B20A08E-907A-42E0-974D-9BC3023970BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B20A08E-907A-42E0-974D-9BC3023970BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14982A3C-5DDA-4656-953A-E1B93A921EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14982A3C-5DDA-4656-953A-E1B93A921EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14982A3C-5DDA-4656-953A-E1B93A921EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14982A3C-5DDA-4656-953A-E1B93A921EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{505C1593-4961-48BC-93C4-6EF8EB48D60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{505C1593-4961-48BC-93C4-6EF8EB48D60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{505C1593-4961-48BC-93C4-6EF8EB48D60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{505C1593-4961-48BC-93C4-6EF8EB48D60B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74617B8F-78BD-4BF6-B9A3-A8CB8CA1CF98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74617B8F-78BD-4BF6-B9A3-A8CB8CA1CF98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74617B8F-78BD-4BF6-B9A3-A8CB8CA1CF98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74617B8F-78BD-4BF6-B9A3-A8CB8CA1CF98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F3C0DA-72E4-4095-9FD0-08652248EE0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F3C0DA-72E4-4095-9FD0-08652248EE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F3C0DA-72E4-4095-9FD0-08652248EE0E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B6F3C0DA-72E4-4095-9FD0-08652248EE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F3C0DA-72E4-4095-9FD0-08652248EE0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F3C0DA-72E4-4095-9FD0-08652248EE0E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{171A50BC-53D8-45F7-8E07-B7DE1A477864} = {932294A8-27CA-4CAD-AA33-F97BEED8EF61}
+		{AA27A761-D2B6-4A73-9A04-A70BB32D6F7D} = {932294A8-27CA-4CAD-AA33-F97BEED8EF61}
+		{855F1CC8-1274-47A8-93C0-EF2F39839D47} = {932294A8-27CA-4CAD-AA33-F97BEED8EF61}
+		{3B20A08E-907A-42E0-974D-9BC3023970BD} = {AE5739D2-6E4D-4B9A-A46C-CD8EACE8D546}
+		{14982A3C-5DDA-4656-953A-E1B93A921EF5} = {AE5739D2-6E4D-4B9A-A46C-CD8EACE8D546}
+		{505C1593-4961-48BC-93C4-6EF8EB48D60B} = {AE5739D2-6E4D-4B9A-A46C-CD8EACE8D546}
+		{74617B8F-78BD-4BF6-B9A3-A8CB8CA1CF98} = {AE5739D2-6E4D-4B9A-A46C-CD8EACE8D546}
+		{B6F3C0DA-72E4-4095-9FD0-08652248EE0E} = {932294A8-27CA-4CAD-AA33-F97BEED8EF61}
+	EndGlobalSection
+EndGlobal

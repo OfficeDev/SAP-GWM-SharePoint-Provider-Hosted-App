@@ -1,0 +1,124 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="Microsoft.SharePoint.DataService" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2007/05/edm">
+      <EntityType Name="ContosoMotorsPictureLibraryItem" m:HasStream="true">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="PictureWidth" Type="Edm.Int32" Nullable="true" />
+        <Property Name="PictureHeight" Type="Edm.Int32" Nullable="true" />
+        <Property Name="DatePictureTaken" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" />
+        <Property Name="Keywords" Type="Edm.String" Nullable="true" />
+        <Property Name="StockID" Type="Edm.String" Nullable="true" />
+        <Property Name="ContactPhoto" Type="Edm.String" Nullable="true" />
+        <Property Name="FullImageUrl" Type="Edm.String" Nullable="true" />
+        <Property Name="ThumbnailUrl" Type="Edm.String" Nullable="true" />
+        <Property Name="StockNo" Type="Edm.String" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.ContosoMotorsPictureLibraryItem_CreatedBy" FromRole="ContosoMotorsPictureLibraryItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.ContosoMotorsPictureLibraryItem_ModifiedBy" FromRole="ContosoMotorsPictureLibraryItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="CopySource" Type="Edm.String" Nullable="true" />
+        <Property Name="ApprovalStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="CheckedOutTo" Relationship="Microsoft.SharePoint.DataService.ContosoMotorsPictureLibraryItem_CheckedOutTo" FromRole="ContosoMotorsPictureLibraryItem" ToRole="CheckedOutTo" />
+        <Property Name="CheckedOutToId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="VirusStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="IsCurrentVersion" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="UserInformationListItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Account" Type="Edm.String" Nullable="true" />
+        <Property Name="WorkEmail" Type="Edm.String" Nullable="true" />
+        <Property Name="MobilePhone" Type="Edm.String" Nullable="true" />
+        <Property Name="AboutMe" Type="Edm.String" Nullable="true" />
+        <Property Name="SIPAddress" Type="Edm.String" Nullable="true" />
+        <Property Name="IsSiteAdmin" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Deleted" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Hidden" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Picture" Type="Edm.String" Nullable="true" />
+        <Property Name="Department" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" />
+        <Property Name="FirstName" Type="Edm.String" Nullable="true" />
+        <Property Name="LastName" Type="Edm.String" Nullable="true" />
+        <Property Name="WorkPhone" Type="Edm.String" Nullable="true" />
+        <Property Name="UserName" Type="Edm.String" Nullable="true" />
+        <Property Name="WebSite" Type="Edm.String" Nullable="true" />
+        <Property Name="AskMeAbout" Type="Edm.String" Nullable="true" />
+        <Property Name="Office" Type="Edm.String" Nullable="true" />
+        <Property Name="PictureTimestamp" Type="Edm.String" Nullable="true" />
+        <Property Name="PicturePlaceholderState" Type="Edm.Int32" Nullable="true" />
+        <Property Name="PictureExchangeSyncState" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.UserInformationListItem_CreatedBy" FromRole="UserInformationListItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.UserInformationListItem_ModifiedBy" FromRole="UserInformationListItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <Association Name="ContosoMotorsPictureLibraryItem_CreatedBy">
+        <End Role="ContosoMotorsPictureLibraryItem" Type="Microsoft.SharePoint.DataService.ContosoMotorsPictureLibraryItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="ContosoMotorsPictureLibraryItem_ModifiedBy">
+        <End Role="ContosoMotorsPictureLibraryItem" Type="Microsoft.SharePoint.DataService.ContosoMotorsPictureLibraryItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="ContosoMotorsPictureLibraryItem_CheckedOutTo">
+        <End Role="ContosoMotorsPictureLibraryItem" Type="Microsoft.SharePoint.DataService.ContosoMotorsPictureLibraryItem" Multiplicity="*" />
+        <End Role="CheckedOutTo" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="UserInformationListItem_CreatedBy">
+        <End Role="UserInformationListItem" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="UserInformationListItem_ModifiedBy">
+        <End Role="UserInformationListItem" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <EntityContainer Name="GWMDemoDeveloperDataContext" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="ContosoMotorsPictureLibrary" EntityType="Microsoft.SharePoint.DataService.ContosoMotorsPictureLibraryItem" />
+        <EntitySet Name="UserInformationList" EntityType="Microsoft.SharePoint.DataService.UserInformationListItem" />
+        <AssociationSet Name="ContosoMotorsPictureLibraryItem_CreatedBy" Association="Microsoft.SharePoint.DataService.ContosoMotorsPictureLibraryItem_CreatedBy">
+          <End Role="ContosoMotorsPictureLibraryItem" EntitySet="ContosoMotorsPictureLibrary" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="ContosoMotorsPictureLibraryItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.ContosoMotorsPictureLibraryItem_ModifiedBy">
+          <End Role="ContosoMotorsPictureLibraryItem" EntitySet="ContosoMotorsPictureLibrary" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="ContosoMotorsPictureLibraryItem_CheckedOutTo" Association="Microsoft.SharePoint.DataService.ContosoMotorsPictureLibraryItem_CheckedOutTo">
+          <End Role="ContosoMotorsPictureLibraryItem" EntitySet="ContosoMotorsPictureLibrary" />
+          <End Role="CheckedOutTo" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="UserInformationListItem_CreatedBy" Association="Microsoft.SharePoint.DataService.UserInformationListItem_CreatedBy">
+          <End Role="UserInformationListItem" EntitySet="UserInformationList" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="UserInformationListItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.UserInformationListItem_ModifiedBy">
+          <End Role="UserInformationListItem" EntitySet="UserInformationList" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

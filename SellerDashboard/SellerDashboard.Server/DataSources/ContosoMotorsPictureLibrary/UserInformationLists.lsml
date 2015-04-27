@@ -1,0 +1,800 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="UserInformationList">
+    <EntityType.Attributes>
+      <DisplayName
+        Value="User Information List" />
+      <Description
+        Value="All people." />
+      <SummaryProperty
+        Property="UserInformationList/Properties[WorkEmail]" />
+    </EntityType.Attributes>
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="Id"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="ID" />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="ContentType"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <DisplayName
+            Value="Content Type" />
+          <NotSortable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ContentTypeID"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Content Type ID" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Name"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Name" />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Account"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Account" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="WorkEmail"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Work email" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MobilePhone"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <MaxLength
+            Value="127" />
+          <DisplayName
+            Value="Mobile phone" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AboutMe"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="About me" />
+          <NotSortable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SIPAddress"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="SIP Address" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="IsSiteAdmin"
+        IsReadOnly="True"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Is Site Admin" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Deleted"
+        IsReadOnly="True"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Deleted" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Hidden"
+        IsReadOnly="True"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Hidden" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Picture"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Picture" />
+          <NotSortable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Department"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Department" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Title"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Title" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="FirstName"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="First name" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="LastName"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Last name" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="WorkPhone"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Work phone" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UserName"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="User name" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="WebSite"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Web site" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AskMeAbout"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Ask Me About" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Office"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Office" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PictureTimestamp"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Picture Timestamp" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PicturePlaceholderState"
+        IsReadOnly="True"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Picture Placeholder State" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PictureExchangeSyncState"
+        IsReadOnly="True"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Picture Exchange Sync State" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Modified"
+        IsReadOnly="True"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Modified" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Created"
+        IsReadOnly="True"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Created" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Owshiddenversion"
+        IsReadOnly="True"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="owshiddenversion" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Version"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Version" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Path"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Path" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="CreatedBy"
+        Association="UserInformationListItem_CreatedBy"
+        FromEnd="UserInformationListItem"
+        ToEnd="CreatedBy" />
+      <NavigationProperty
+        Name="ModifiedBy"
+        Association="UserInformationListItem_ModifiedBy"
+        FromEnd="UserInformationListItem"
+        ToEnd="ModifiedBy" />
+    </EntityType.Properties>
+  </EntityType>
+  <Association
+    Name="ContosoMotorsPicture_UserInformationList">
+    <AssociationEnd
+      Name="ContosoMotorsPicture"
+      Multiplicity="Many"
+      EntityType="ContosoMotorsPicture" />
+    <AssociationEnd
+      Name="CreatedBy"
+      EntityType="UserInformationList">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="ContosoMotorsPicture_UserInformationList1">
+    <AssociationEnd
+      Name="ContosoMotorsPicture"
+      Multiplicity="Many"
+      EntityType="ContosoMotorsPicture" />
+    <AssociationEnd
+      Name="ModifiedBy"
+      EntityType="UserInformationList">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="ContosoMotorsPicture_UserInformationList2">
+    <AssociationEnd
+      Name="ContosoMotorsPicture"
+      Multiplicity="Many"
+      EntityType="ContosoMotorsPicture" />
+    <AssociationEnd
+      Name="CheckedOutTo"
+      EntityType="UserInformationList">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="UserInformationListItem_CreatedBy">
+    <AssociationEnd
+      Name="UserInformationListItem"
+      Multiplicity="Many"
+      EntityType="UserInformationList" />
+    <AssociationEnd
+      Name="CreatedBy"
+      EntityType="UserInformationList">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="UserInformationListItem_ModifiedBy">
+    <AssociationEnd
+      Name="UserInformationListItem"
+      Multiplicity="Many"
+      EntityType="UserInformationList" />
+    <AssociationEnd
+      Name="ModifiedBy"
+      EntityType="UserInformationList">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <EntityContainer
+    Name="ContosoMotorsPictureLibrary">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="UserInformationLists"
+      EntityType="UserInformationList">
+      <EntitySet.Attributes>
+        <SharePointList
+          Type="UserInformationList" />
+      </EntitySet.Attributes>
+    </EntitySet>
+    <AssociationSet
+      Name="ContosoMotorsPictureLibraryItem_CreatedBy"
+      Association="ContosoMotorsPicture_UserInformationList">
+      <AssociationSetEnd
+        Name="ContosoMotorsPicture"
+        EntitySet="ContosoMotorsPictures" />
+      <AssociationSetEnd
+        Name="CreatedBy"
+        EntitySet="UserInformationLists" />
+    </AssociationSet>
+    <AssociationSet
+      Name="ContosoMotorsPictureLibraryItem_ModifiedBy"
+      Association="ContosoMotorsPicture_UserInformationList1">
+      <AssociationSetEnd
+        Name="ContosoMotorsPicture"
+        EntitySet="ContosoMotorsPictures" />
+      <AssociationSetEnd
+        Name="ModifiedBy"
+        EntitySet="UserInformationLists" />
+    </AssociationSet>
+    <AssociationSet
+      Name="ContosoMotorsPictureLibraryItem_CheckedOutTo"
+      Association="ContosoMotorsPicture_UserInformationList2">
+      <AssociationSetEnd
+        Name="ContosoMotorsPicture"
+        EntitySet="ContosoMotorsPictures" />
+      <AssociationSetEnd
+        Name="CheckedOutTo"
+        EntitySet="UserInformationLists" />
+    </AssociationSet>
+    <AssociationSet
+      Name="UserInformationListItem_CreatedBy"
+      Association="UserInformationListItem_CreatedBy">
+      <AssociationSetEnd
+        Name="UserInformationListItem"
+        EntitySet="UserInformationLists" />
+      <AssociationSetEnd
+        Name="CreatedBy"
+        EntitySet="UserInformationLists" />
+    </AssociationSet>
+    <AssociationSet
+      Name="UserInformationListItem_ModifiedBy"
+      Association="UserInformationListItem_ModifiedBy">
+      <AssociationSetEnd
+        Name="UserInformationListItem"
+        EntitySet="UserInformationLists" />
+      <AssociationSetEnd
+        Name="ModifiedBy"
+        EntitySet="UserInformationLists" />
+    </AssociationSet>
+    <QueryOperation
+      Name="UserInformationLists_Single"
+      ReturnType="UserInformationList">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Id" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Id" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="UserInformationLists" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType="Microsoft.LightSwitch:Int32?">
+        <QueryOperationParameter.Attributes>
+          <DisplayName
+            Value="ID" />
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="UserInformationLists_SingleOrDefault"
+      ReturnType="UserInformationList">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Id" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Id" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="UserInformationLists" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType="Microsoft.LightSwitch:Int32?">
+        <QueryOperationParameter.Attributes>
+          <DisplayName
+            Value="ID" />
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+  </EntityContainer>
+  <DataService
+    Name="ContosoMotorsPictureLibraryDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <EntitySetMapping
+      EntitySet="UserInformationLists">
+      <EntitySetMapping.Attributes>
+        <CsdlEntitySet
+          EntityTypeName="UserInformationListItem"
+          Name="UserInformationList"
+          EntityType="UserInformationList" />
+        <CsdlProperty
+          Name="ContentTypeID"
+          Property="UserInformationList/Properties[ContentTypeID]" />
+        <CsdlProperty
+          Name="Name"
+          Property="UserInformationList/Properties[Name]" />
+        <CsdlProperty
+          Name="Account"
+          Property="UserInformationList/Properties[Account]" />
+        <CsdlProperty
+          Name="WorkEmail"
+          Property="UserInformationList/Properties[WorkEmail]" />
+        <CsdlProperty
+          Name="MobilePhone"
+          Property="UserInformationList/Properties[MobilePhone]" />
+        <CsdlProperty
+          Name="AboutMe"
+          Property="UserInformationList/Properties[AboutMe]" />
+        <CsdlProperty
+          Name="SIPAddress"
+          Property="UserInformationList/Properties[SIPAddress]" />
+        <CsdlProperty
+          Name="IsSiteAdmin"
+          Property="UserInformationList/Properties[IsSiteAdmin]" />
+        <CsdlProperty
+          Name="Deleted"
+          Property="UserInformationList/Properties[Deleted]" />
+        <CsdlProperty
+          Name="Hidden"
+          Property="UserInformationList/Properties[Hidden]" />
+        <CsdlProperty
+          Name="Picture"
+          Property="UserInformationList/Properties[Picture]" />
+        <CsdlProperty
+          Name="Department"
+          Property="UserInformationList/Properties[Department]" />
+        <CsdlProperty
+          Name="Title"
+          Property="UserInformationList/Properties[Title]" />
+        <CsdlProperty
+          Name="FirstName"
+          Property="UserInformationList/Properties[FirstName]" />
+        <CsdlProperty
+          Name="LastName"
+          Property="UserInformationList/Properties[LastName]" />
+        <CsdlProperty
+          Name="WorkPhone"
+          Property="UserInformationList/Properties[WorkPhone]" />
+        <CsdlProperty
+          Name="UserName"
+          Property="UserInformationList/Properties[UserName]" />
+        <CsdlProperty
+          Name="WebSite"
+          Property="UserInformationList/Properties[WebSite]" />
+        <CsdlProperty
+          Name="AskMeAbout"
+          Property="UserInformationList/Properties[AskMeAbout]" />
+        <CsdlProperty
+          Name="Office"
+          Property="UserInformationList/Properties[Office]" />
+        <CsdlProperty
+          Name="PictureTimestamp"
+          Property="UserInformationList/Properties[PictureTimestamp]" />
+        <CsdlProperty
+          Name="PicturePlaceholderState"
+          Property="UserInformationList/Properties[PicturePlaceholderState]" />
+        <CsdlProperty
+          Name="PictureExchangeSyncState"
+          Property="UserInformationList/Properties[PictureExchangeSyncState]" />
+        <CsdlProperty
+          Name="Id"
+          Property="UserInformationList/Properties[Id]" />
+        <CsdlProperty
+          Name="ContentType"
+          Property="UserInformationList/Properties[ContentType]" />
+        <CsdlProperty
+          Name="Modified"
+          Property="UserInformationList/Properties[Modified]" />
+        <CsdlProperty
+          Name="Created"
+          Property="UserInformationList/Properties[Created]" />
+        <CsdlProperty
+          Name="Owshiddenversion"
+          Property="UserInformationList/Properties[Owshiddenversion]" />
+        <CsdlProperty
+          Name="Version"
+          Property="UserInformationList/Properties[Version]" />
+        <CsdlProperty
+          Name="Path"
+          Property="UserInformationList/Properties[Path]" />
+        <CsdlProperty
+          Name="CreatedBy"
+          Property="UserInformationList/Properties[CreatedBy]" />
+        <CsdlForeignKeyProperty
+          Name="CreatedById"
+          Property="UserInformationList/Properties[Id]" />
+        <CsdlProperty
+          Name="ModifiedBy"
+          Property="UserInformationList/Properties[ModifiedBy]" />
+        <CsdlForeignKeyProperty
+          Name="ModifiedById"
+          Property="UserInformationList/Properties[Id]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="ContosoMotorsPictureLibraryItem_CreatedBy">
+      <AssociationSetMapping.Attributes>
+        <CsdlAssociation
+          Name="ContosoMotorsPictureLibraryItem_CreatedBy"
+          Association="ContosoMotorsPicture_UserInformationList" />
+        <CsdlAssociationSetEnd
+          End="ContosoMotorsPictureLibrary/Members[ContosoMotorsPictureLibraryItem_CreatedBy]/Members[CreatedBy]">
+          <CsdlAssociationSetEnd.Attributes>
+            <CsdlPropertyRef
+              Name="Id" />
+          </CsdlAssociationSetEnd.Attributes>
+        </CsdlAssociationSetEnd>
+        <CsdlAssociationSetEnd
+          End="ContosoMotorsPictureLibrary/Members[ContosoMotorsPictureLibraryItem_CreatedBy]/Members[ContosoMotorsPicture]">
+          <CsdlAssociationSetEnd.Attributes>
+            <CsdlPropertyRef
+              Name="CreatedById" />
+          </CsdlAssociationSetEnd.Attributes>
+        </CsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="ContosoMotorsPictureLibraryItem_ModifiedBy">
+      <AssociationSetMapping.Attributes>
+        <CsdlAssociation
+          Name="ContosoMotorsPictureLibraryItem_ModifiedBy"
+          Association="ContosoMotorsPicture_UserInformationList1" />
+        <CsdlAssociationSetEnd
+          End="ContosoMotorsPictureLibrary/Members[ContosoMotorsPictureLibraryItem_ModifiedBy]/Members[ModifiedBy]">
+          <CsdlAssociationSetEnd.Attributes>
+            <CsdlPropertyRef
+              Name="Id" />
+          </CsdlAssociationSetEnd.Attributes>
+        </CsdlAssociationSetEnd>
+        <CsdlAssociationSetEnd
+          End="ContosoMotorsPictureLibrary/Members[ContosoMotorsPictureLibraryItem_ModifiedBy]/Members[ContosoMotorsPicture]">
+          <CsdlAssociationSetEnd.Attributes>
+            <CsdlPropertyRef
+              Name="ModifiedById" />
+          </CsdlAssociationSetEnd.Attributes>
+        </CsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="ContosoMotorsPictureLibraryItem_CheckedOutTo">
+      <AssociationSetMapping.Attributes>
+        <CsdlAssociation
+          Name="ContosoMotorsPictureLibraryItem_CheckedOutTo"
+          Association="ContosoMotorsPicture_UserInformationList2" />
+        <CsdlAssociationSetEnd
+          End="ContosoMotorsPictureLibrary/Members[ContosoMotorsPictureLibraryItem_CheckedOutTo]/Members[CheckedOutTo]">
+          <CsdlAssociationSetEnd.Attributes>
+            <CsdlPropertyRef
+              Name="Id" />
+          </CsdlAssociationSetEnd.Attributes>
+        </CsdlAssociationSetEnd>
+        <CsdlAssociationSetEnd
+          End="ContosoMotorsPictureLibrary/Members[ContosoMotorsPictureLibraryItem_CheckedOutTo]/Members[ContosoMotorsPicture]">
+          <CsdlAssociationSetEnd.Attributes>
+            <CsdlPropertyRef
+              Name="CheckedOutToId" />
+          </CsdlAssociationSetEnd.Attributes>
+        </CsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="UserInformationListItem_CreatedBy">
+      <AssociationSetMapping.Attributes>
+        <CsdlAssociation
+          Name="UserInformationListItem_CreatedBy"
+          Association="UserInformationListItem_CreatedBy" />
+        <CsdlAssociationSetEnd
+          End="ContosoMotorsPictureLibrary/Members[UserInformationListItem_CreatedBy]/Members[CreatedBy]">
+          <CsdlAssociationSetEnd.Attributes>
+            <CsdlPropertyRef
+              Name="Id" />
+          </CsdlAssociationSetEnd.Attributes>
+        </CsdlAssociationSetEnd>
+        <CsdlAssociationSetEnd
+          End="ContosoMotorsPictureLibrary/Members[UserInformationListItem_CreatedBy]/Members[UserInformationListItem]">
+          <CsdlAssociationSetEnd.Attributes>
+            <CsdlPropertyRef
+              Name="CreatedById" />
+          </CsdlAssociationSetEnd.Attributes>
+        </CsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="UserInformationListItem_ModifiedBy">
+      <AssociationSetMapping.Attributes>
+        <CsdlAssociation
+          Name="UserInformationListItem_ModifiedBy"
+          Association="UserInformationListItem_ModifiedBy" />
+        <CsdlAssociationSetEnd
+          End="ContosoMotorsPictureLibrary/Members[UserInformationListItem_ModifiedBy]/Members[ModifiedBy]">
+          <CsdlAssociationSetEnd.Attributes>
+            <CsdlPropertyRef
+              Name="Id" />
+          </CsdlAssociationSetEnd.Attributes>
+        </CsdlAssociationSetEnd>
+        <CsdlAssociationSetEnd
+          End="ContosoMotorsPictureLibrary/Members[UserInformationListItem_ModifiedBy]/Members[UserInformationListItem]">
+          <CsdlAssociationSetEnd.Attributes>
+            <CsdlPropertyRef
+              Name="ModifiedById" />
+          </CsdlAssociationSetEnd.Attributes>
+        </CsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+  </DataService>
+</ServiceApplication>

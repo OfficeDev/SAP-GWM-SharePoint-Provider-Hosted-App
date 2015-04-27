@@ -1,0 +1,690 @@
+﻿/* Replace user-splash-screen.png with your own splash screen image */
+#msls-id-app-loading .msls-app-loading-img {
+    background-image: url(Images/user-splash-screen.png);
+}
+
+/* Font families for screen and dialog headers.  Font families for content inside a screen 
+    or dialog are determined by the theme's global font family setting. */
+.msls-header .ui-title {
+    font-family: 'Segoe Light', 'Segoe UI Light', 'Segoe UI', 'Segoe WP Light', 'Roboto Light','Frutiger','Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+/* Customizable font styles for screen controls */
+.msls-font-style-large {
+}
+
+.msls-font-style-normal {
+}
+
+.msls-font-style-small {
+}
+
+.left-navigation {
+    width: 215px;
+    margin-left: 10px;
+    height: calc(100% - 55px) !important;
+    background-color: white;
+}
+
+.data-content-pane {
+    width:  calc(100% - 240px);
+    margin-left: 5px;
+    margin-right: 10px;
+    height: calc(100% - 55px) !important;
+    background-color: white;
+}
+
+.car-details-left {
+    width: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: calc(100% - 10px) !important;
+    background-color: white;
+}
+
+.car-details-right {
+    width: calc(100% - 445px);
+    margin-right: 10px;
+    height: calc(100% - 10px) !important;
+    background-color: white;
+}
+
+.align-right {
+    float: right;
+}
+
+.grey-font {
+    font-size: 17px;
+    color: #B0B0B0;
+}
+
+.back-button {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 15px;
+}
+
+.back-button:hover {
+        background-color: #cde6f7;
+    }
+
+.back-button-img {
+    vertical-align: top;
+}
+
+.sort-drop-list-container>div.ui-select>div>span.ui-btn-inner {
+    height: 31px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 1px;
+}
+
+.sort-drop-list-container>div.ui-select>div>select {
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    color: #333333;
+}
+
+.sort-drop-list-container>div.ui-select>div>span.ui-btn-inner>span.ui-btn-text {
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    line-height: 2;
+    color: #333333;
+    height: 31px;
+}
+
+.sort-drop-list-container>div.ui-select>div>span.ui-btn-inner>span.ui-icon {
+    background-image: url('Images/caratDown.png');
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+}
+
+li.tile-view-border {
+    width: 350px;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    border: none;
+    padding: 0 !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+li.tile-view-border>div {
+    width: 350px;
+    background: #f4f4f4;
+}
+
+.tile-view-left-column-container {
+    margin-right: 10px;
+    background: #ffffff;
+    position: relative;
+}
+
+.tile-view-left-column-container>div>div.msls-list-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.tile-view-picture {
+    width: 120px;
+    height: 67.5px;
+    padding: 0 !important;
+    float: left !important;
+}
+
+.tile-view-right-column-container {
+    padding-top: 3px;
+    position: relative;
+    width: calc(100% - 80px);
+}
+
+.tile-view-content-bold {
+    display: block;
+    color: #333333;
+    font: normal 14px/20px 'SegoeUI-Semilight','Segoe UI';
+}
+
+.tile-view-content-normal {
+    display: block;
+    color: #666666;
+    font: normal 11px/27px 'Segoe UI';
+}
+
+.tile-view-content-normal-right {
+    display: block;
+    position: absolute;
+    float: right;
+    color: #767676;
+    right: 10px;
+    bottom: 6px;
+    font: normal 10px 'SegoeUI-Semibold','Segoe UI';
+}
+
+.details-picture-large {
+    max-width: 100%;
+    margin: auto;
+    visibility: visible;
+    border: 0;
+    display: inline;
+    vertical-align: middle;
+}
+
+.details-picture-small {
+    max-width: 196px;
+    max-height: 75px;
+    margin: auto;
+    visibility: visible;
+}
+
+.details-container {
+    padding-left: 23px;
+    padding-bottom: 24px;
+    width: 50%;
+}
+
+.details-img-container {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    line-height: 230px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.details-label {
+    font-family: "Segoe UI";
+    font-size: 13px;
+    color: #0072C6;
+}
+
+.details-content {
+    font-size: 18px;
+    font-family: "Segoe UI";
+    color: #666666;
+}
+
+.presence-status-img {
+    position: absolute;
+}
+
+.presence-status-img-pawn-online {
+    left: -208px;
+    top: -187px;
+}
+
+.presence-status-img-pawn-online-oof {
+    left: -199px;
+    top: -199px;
+}
+
+.presence-status-img-pawn-away {
+    left: -181px;
+    top: -217px;
+}
+
+.presence-status-img-pawn-away-oof {
+    left: -215px;
+    top: -109px;
+}
+
+.presence-status-img-pawn-blocked {
+    left: -145px;
+    top: -209px;
+}
+
+.presence-status-img-pawn-blocked-oof {
+    left: -133px;
+    top: -217px;
+}
+
+.presence-status-img-pawn-busy {
+    left: -215px;
+    top: -133px;
+}
+
+.presence-status-img-pawn-busy-oof {
+    left: -215px;
+    top: -145px;
+}
+
+.presence-status-img-pawn-donotdisturb {
+    left: -220px;
+    top: -157px;
+}
+
+.presence-status-img-pawn-donotdisturb-oof {
+    left: -208px;
+    top: -175px;
+}
+
+.presence-status-img-pawn-offline {
+    left: -25px;
+    top: -217px;
+}
+
+.presence-status-img-pawn-offline-oof {
+    left: -13px;
+    top: -217px;
+}
+
+.presence-status-img-pawn-disconnected {
+    left: -85px;
+    top: -217px;
+}
+
+.presence-status-img-pawn-disconnected-oof {
+    left: -73px;
+    top: -217px;
+}
+
+.presence-status-img-pawn {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+}
+
+.presence-status-img-strip-online {
+    left: -61px;
+    top: -75px;
+}
+
+.presence-status-img-strip-online-oof {
+    left: -71px;
+    top: -75px;
+}
+
+.presence-status-img-strip-away {
+    left: -131px;
+    top: -75px;
+}
+
+.presence-status-img-strip-away-oof {
+    left: -1px;
+    top: -1px;
+}
+
+.presence-status-img-strip-blocked {
+    left: -121px;
+    top: -75px;
+}
+
+.presence-status-img-strip-blocked-oof {
+    left: -31px;
+    top: -1px;
+}
+
+.presence-status-img-strip-busy {
+    left: -41px;
+    top: -1px;
+}
+
+.presence-status-img-strip-busy-oof {
+    left: -51px;
+    top: -1px;
+}
+
+.presence-status-img-strip-donotdisturb {
+    left: -11px;
+    top: -75px;
+}
+
+.presence-status-img-strip-donotdisturb-oof {
+    left: -21px;
+    top: -75px;
+}
+
+.presence-status-img-strip-offline {
+    left: -91px;
+    top: -75px;
+}
+
+.presence-status-img-strip-offline-oof {
+    left: -51px;
+    top: -75px;
+}
+
+.presence-status-img-strip-disconnected {
+    left: -71px;
+    top: -1px;
+}
+
+.presence-status-img-strip-disconnected-oof {
+    left: -101px;
+    top: -75px;
+}
+
+.presence-status-img-strip {
+    width: 8px;
+    height: 72px;
+}
+
+.presence-status-img-picture-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 72px;
+    height: 72px;
+}
+
+.presence-status-img-picture {
+    position: absolute;
+    -moz-min-width: 72px;
+    -ms-min-width: 72px;
+    -o-min-width: 72px;
+    -webkit-min-width: 72px;
+    min-width: 72px;
+    max-width: 72px;
+    height: 72px;
+}
+
+.listgrid01 {
+    width: 100%;
+    height: auto;
+    -moz-min-width: 666px;
+    -ms-min-width: 666px;
+    -o-min-width: 666px;
+    -webkit-min-width: 666px;
+    min-width: 666px;
+    border-collapse: collapse;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a3aeaf;
+    clear: both;
+}
+
+.listgrid01 th {
+        border-top: #a3aeaf solid 1px;
+        border-bottom: #a3aeaf solid 1px;
+        background-color: #FFFFFF;
+        font-family: "SegoeUI-Semilight", "Segoe UI", Segoe, Tahoma, Helvetica, Arial, sans-serif;
+        font-size: 11px;
+        font-weight: normal;
+        color: #666666;
+        text-transform: uppercase;
+        padding: 0 15px 0 5px;
+        vertical-align: top;
+        line-height: 29px;
+        text-align: left;
+    }
+
+    .listgrid01 td.bold-column {
+        font-family: "SegoeUI-Semilight", "Segoe UI", Segoe, Tahoma, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        padding: 0 15px 0 5px;
+        vertical-align: top;
+        line-height: 28px;
+        text-align: left;
+        margin: 1px 0;
+        color: #333333;
+        border-bottom: 2px solid #fff;
+    }
+
+    .listgrid01 td.normal-column {
+        font-family: "Segoe UI", Segoe, Tahoma, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        padding: 0 15px 0 5px;
+        vertical-align: top;
+        line-height: 28px;
+        text-align: left;
+        margin: 1px 0;
+    }
+
+        .listgrid01 td label {
+            cursor: pointer;
+        }
+
+    .listgrid01 tr:hover, .listgrid01 tr:active {
+        background-color: #eaecee;
+        color: #333333;
+    }
+
+    .listgrid01 tr:last-child td {
+        border-bottom: none;
+        padding-bottom: 8px;
+    }
+
+    .listgrid01 .listgridcheckbox-visible {
+        width: 20px;
+        height: 15px;
+        display: block;
+        padding: 5px;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .listgrid01 .listgridcheckbox {
+        width: 20px;
+        height: 15px;
+        display: block;
+        padding: 3px 0;
+        overflow: hidden;
+        margin-left: -20px;
+        position: absolute;
+    }
+
+        .listgrid01 .listgridcheckbox input {
+            display: none;
+        }
+
+    .listgrid01 tr:hover .listgridcheckbox input {
+        display: block;
+    }
+
+    .listgrid01 .listgridcheckbox input:checked {
+        display: block;
+    }
+
+    .listgrid01 th.listgridcheckbox {
+        padding-top: 8px;
+    }
+
+    /* LISTGRID PANEL */
+
+    .listgrid01 .quickaccesspanel-column {
+        width: 200px;
+    }
+
+    .listgrid01 .quickaccess {
+        display: none;
+    }
+
+#content-container {
+    padding: 0;
+    background-color: #F1F1F1;
+}
+
+#chrome-bar-container {
+    padding: 0;
+}
+
+#chrome-bar-container .titles-bar {
+    padding: 8px 0 8px 22px;
+}
+
+#chrome-bar-container .titles-bar .msls-logo-back-area {
+    padding-top: 0;
+}
+
+#chrome-bar-container .titles-bar .msls-logo-back-area .msls-logo a.ui-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 13px;
+}
+
+#chrome-bar-container .titles-bar .msls-logo-back-area .msls-logo #chrome-bar-office365-logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#chrome-bar-container .titles-bar .msls-logo-back-area .msls-logo #chrome-bar-company-name {
+    vertical-align: -1px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #0072C6;
+}
+
+.msls-header .msls-logo-back-area .msls-logo {
+    margin-right: 8px;
+    margin-bottom: 1px;
+    margin-top: 2px;
+}
+
+.msls-header .msls-logo img {
+    height: inherit;
+}
+
+#left-navigation-company-logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.left-navigation-seller-dashboard-section {
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 30px;
+}
+
+.left-navigation-seller-dashboard-section:hover {
+    background-color: #cce3f4;
+}
+
+.left-navigation-seller-dashboard-section div {
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    color: #333333;
+}
+
+#left-navigation-partner-tag {
+    padding-top: 36px;
+    padding-bottom: 9px;
+    line-height: 1;
+}
+
+#left-navigation-partner-tag span {
+    font-size: 11px;
+    font-family: "Segoe UI";
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.left-navigation-partners {
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.left-navigation-partners:hover {
+    background-color: #cce3f4;
+}
+
+.left-navigation-partners .partners-left-column {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    display: table-cell;
+}
+
+.left-navigation-partners .partners-left-column img {
+    height: 30px;
+    vertical-align: top;
+}
+
+.left-navigation-partners .partners-right-column {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.left-navigation-partners .partners-right-column span {
+    font-family: "Segoe UI";
+    font-size: 12px;
+    color: #333333;
+}
+
+.retailer-title-container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 23px;
+}
+
+.retailer-title {
+    font-family: "Segoe UI";
+    font-size: 20px;
+    vertical-align: middle;
+    vertical-align: 6px;
+    color: #333333;
+}
+
+.button-container {
+    padding-left: 24px;
+    padding-right: 17px;
+    cursor: pointer;
+}
+
+.button-container span img {
+    vertical-align: middle;
+}
+
+.button-container span span {
+    vertical-align: middle;
+    padding-left: 2px;
+    font-size: 14px;
+    color: #666666;
+    font-family: "Segoe UI";
+}
+
+.search-box-container {
+    padding: 0 17px 0 24px;
+}
+
+.table-view-button {
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.list-view-table-container {
+    top: 8px;
+}
+
+.sort-by-tag {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #666666;
+    font-family: "Segoe UI";
+    left: -2px;
+    top: 1px;
+}
+
+div.ui-btn {
+    margin: 0;
+    top: -2px;
+}
+
+/* Uncomment the following lines if you want to use certain jQuery Mobile listview features such as 
+    count bubbles and icons inside LightSwitch lists. jQuery Mobile relies on list items using 
+    position:relative for these features.  However, this setting performs poorly on certain mobile 
+    devices (webkit based in particular) when there are large numbers of items in the list. */
+/*
+.msls-ctl-list .ui-listview > .ui-li,
+.msls-ctl-list .ui-field-contain.ui-li {
+    position: relative;
+}
+*/
+
+/* Phone media query (portrait and landscape) */
+@media 
+screen and (max-width: 400px) and (orientation: portrait), 
+screen and (max-width: 640px) and (max-height: 400px) and (orientation: landscape) {
+}

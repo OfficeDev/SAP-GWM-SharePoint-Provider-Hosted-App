@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="InventoryItem">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <EntityProperty
+        Name="ArrivedDate"
+        PropertyType=":Date">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="BodyStyle"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Brand"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="BuyerEmail"
+        PropertyType="Microsoft.LightSwitch.Extensions:EmailAddress?" />
+      <EntityProperty
+        Name="ContactEmail"
+        PropertyType="Microsoft.LightSwitch.Extensions:EmailAddress?" />
+      <EntityProperty
+        Name="ContactName"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ContactPhone"
+        PropertyType="Microsoft.LightSwitch.Extensions:PhoneNumber?" />
+      <EntityProperty
+        Name="Engine"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ExtColor"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <KeyProperty
+        Name="ID"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Required />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="IntColor"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MaxPower"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Model"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Price"
+        PropertyType="Microsoft.LightSwitch.Extensions:Money">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Removed"
+        IsReadOnly="True"
+        PropertyType=":Boolean">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Status"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Transmission"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Year"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="IsValid"
+        IsReadOnly="True"
+        PropertyType=":Boolean">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <VirtualNavigationProperty
+        Name="ContosoMotorsPicture"
+        FromEnd="InventoryItem"
+        ToEnd="ContosoMotorsPicture"
+        VirtualAssociation="InventoryItem_ContosoMotorsPicture" />
+      <EntityProperty
+        Name="StockNo"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityContainer
+    Name="ContosoMotorsCarInventory">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="InventoryItems"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="InventoryItem" />
+    <QueryOperation
+      Name="InventoryItems_Single"
+      ReturnType="InventoryItem">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="InventoryItems" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="InventoryItems_SingleOrDefault"
+      ReturnType="InventoryItem">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="InventoryItems" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+  </EntityContainer>
+  <VirtualAssociation
+    Name="InventoryItem_ContosoMotorsPicture">
+    <VirtualAssociationEnd
+      Name="InventoryItem"
+      Multiplicity="One"
+      EntityType="InventoryItem" />
+    <VirtualAssociationEnd
+      Name="ContosoMotorsPicture"
+      EntityType="ContosoMotorsPicture" />
+  </VirtualAssociation>
+  <VirtualAssociationSet
+    Name="InventoryItem_ContosoMotorsPicture_Set"
+    VirtualAssociation="InventoryItem_ContosoMotorsPicture">
+    <VirtualAssociationSetEnd
+      Name="InventoryItem"
+      EntityContainer="ContosoMotorsCarInventory"
+      EntitySet="InventoryItems">
+      <VirtualAssociationSetEndProperty
+        EntityProperty="StockNo" />
+    </VirtualAssociationSetEnd>
+    <VirtualAssociationSetEnd
+      Name="ContosoMotorsPicture"
+      EntityContainer="ContosoMotorsPictureLibrary"
+      EntitySet="ContosoMotorsPictures">
+      <VirtualAssociationSetEndProperty
+        EntityProperty="StockNo" />
+    </VirtualAssociationSetEnd>
+  </VirtualAssociationSet>
+  <DataService
+    Name="ContosoMotorsCarInventoryDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <EntitySetMapping
+      EntitySet="InventoryItems">
+      <EntitySetMapping.Attributes>
+        <WcfRiaEntitySet
+          EntitySetQuery="GetAllCarInventory"
+          EntityTypeName="CarInventoryModel.InventoryItem" />
+        <WcfRiaProperty
+          Name="ArrivedDate"
+          Property="InventoryItem/Properties[ArrivedDate]" />
+        <WcfRiaProperty
+          Name="BodyStyle"
+          Property="InventoryItem/Properties[BodyStyle]" />
+        <WcfRiaProperty
+          Name="Brand"
+          Property="InventoryItem/Properties[Brand]" />
+        <WcfRiaProperty
+          Name="BuyerEmail"
+          Property="InventoryItem/Properties[BuyerEmail]" />
+        <WcfRiaProperty
+          Name="ContactEmail"
+          Property="InventoryItem/Properties[ContactEmail]" />
+        <WcfRiaProperty
+          Name="ContactName"
+          Property="InventoryItem/Properties[ContactName]" />
+        <WcfRiaProperty
+          Name="ContactPhone"
+          Property="InventoryItem/Properties[ContactPhone]" />
+        <WcfRiaProperty
+          Name="Engine"
+          Property="InventoryItem/Properties[Engine]" />
+        <WcfRiaProperty
+          Name="ExtColor"
+          Property="InventoryItem/Properties[ExtColor]" />
+        <WcfRiaProperty
+          Name="ID"
+          Property="InventoryItem/Properties[ID]" />
+        <WcfRiaProperty
+          Name="StockNo"
+          Property="InventoryItem/Properties[StockNo]" />
+        <WcfRiaProperty
+          Name="IntColor"
+          Property="InventoryItem/Properties[IntColor]" />
+        <WcfRiaProperty
+          Name="MaxPower"
+          Property="InventoryItem/Properties[MaxPower]" />
+        <WcfRiaProperty
+          Name="Model"
+          Property="InventoryItem/Properties[Model]" />
+        <WcfRiaProperty
+          Name="Price"
+          Property="InventoryItem/Properties[Price]" />
+        <WcfRiaProperty
+          Name="Removed"
+          Property="InventoryItem/Properties[Removed]" />
+        <WcfRiaProperty
+          Name="Status"
+          Property="InventoryItem/Properties[Status]" />
+        <WcfRiaProperty
+          Name="Transmission"
+          Property="InventoryItem/Properties[Transmission]" />
+        <WcfRiaProperty
+          Name="Year"
+          Property="InventoryItem/Properties[Year]" />
+        <WcfRiaProperty
+          Name="IsValid"
+          Property="InventoryItem/Properties[IsValid]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+  </DataService>
+</ServiceApplication>

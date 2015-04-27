@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\Users\saulc\Documents\Visual Studio 2015\Projects\SellerDashboard\SellerDashboard\SellerDashboard\SellerDashboard.Server\DataSources\ContosoMotorsCarInventory\InventoryItems.lsml" Checksum="FC5B87E8D4CCAE9BEA0FBBBB059B02514F18517C1959772DAE53A946E40BCA7B" />
+    <Document FullPath="C:\Users\saulc\Documents\Visual Studio 2015\Projects\SellerDashboard\SellerDashboard\SellerDashboard\SellerDashboard.Server\DataSources\ContosoMotorsCarInventory\ContosoMotorsQuery.lsml" Checksum="B1A10F58E9841E2D4C47950C3B749D106B2A793CBAD62B7865F5F7166755D5FB" />
+    <Document FullPath="C:\Users\saulc\Documents\Visual Studio 2015\Projects\SellerDashboard\SellerDashboard\SellerDashboard\SellerDashboard.Server\DataSources\ContosoMotorsCarInventory\GetFilteredCarInventory.lsml" Checksum="8F3FB2E20D362B70AABF7F57A9D61A6912110822CE11212FB3411C7A68E77457" />
+    <Document FullPath="C:\Users\saulc\Documents\Visual Studio 2015\Projects\SellerDashboard\SellerDashboard\SellerDashboard\SellerDashboard.Server\DataSources\ContosoMotorsPictureLibrary\ContosoMotorsPictures.lsml" Checksum="7D4A60723C1971D1FF49CF040E03C7385251A9366916F7F035BC3982E67CCC29" />
+    <Document FullPath="C:\Users\saulc\Documents\Visual Studio 2015\Projects\SellerDashboard\SellerDashboard\SellerDashboard\SellerDashboard.Server\DataSources\ContosoMotorsPictureLibrary\UserInformationLists.lsml" Checksum="C7E8237E186276F32B4682762FB582DFB2180BD47BA5962C85B246285786891D" />
+    <Document FullPath="C:\Users\saulc\Documents\Visual Studio 2015\Projects\SellerDashboard\SellerDashboard\SellerDashboard\SellerDashboard.Server\Properties\DataSources\ContosoMotorsCarInventory.lsml" Checksum="B9C455D052F9779D50231A9F758DD42D240CC3EF1283481BF0668411285E99A1" />
+    <Document FullPath="C:\Users\saulc\Documents\Visual Studio 2015\Projects\SellerDashboard\SellerDashboard\SellerDashboard\SellerDashboard.Server\Properties\DataSources\ContosoMotorsPictureLibrary.lsml" Checksum="CFD68FB1732B0B32CF2187A75B0BF6DC7B9AA985C5981794F1B851161A478D09" />
+    <Document FullPath="C:\Users\saulc\Documents\Visual Studio 2015\Projects\SellerDashboard\SellerDashboard\SellerDashboard\SellerDashboard.Server\Properties\Service.lsml" Checksum="C4A4E753827ED36649F7734D5AC8BF2A0588C301D0E666F056D73663727E0B0D" />
+  </Documents>
+</ModelDocumentManifest>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ContosoMotorsCarInventoryStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ContosoMotorsCarInventoryStore">
+    <EntitySet Name="GetAllCarInventory" EntityType="ContosoMotorsCarInventoryStore.InventoryItem" store:Type="Tables" Schema="dbo" Table="CarInventoryModel.InventoryItem" />
+  </EntityContainer>
+  <EntityType Name="InventoryItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ArrivedDate" Type="datetime" Nullable="false" />
+    <Property Name="BodyStyle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Brand" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BuyerEmail" Type="nvarchar(max)" />
+    <Property Name="ContactEmail" Type="nvarchar(max)" />
+    <Property Name="ContactName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ContactPhone" Type="nvarchar(max)" />
+    <Property Name="Engine" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ExtColor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="IntColor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MaxPower" Type="int" Nullable="false" />
+    <Property Name="Model" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="18" />
+    <Property Name="Removed" Type="bit" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Transmission" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="IsValid" Type="bit" Nullable="false" />
+    <Property Name="StockNo" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+</Schema>

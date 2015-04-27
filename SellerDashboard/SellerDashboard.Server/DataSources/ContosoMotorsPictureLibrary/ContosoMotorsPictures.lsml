@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="ContosoMotorsPicture">
+    <EntityType.Attributes>
+      <DisplayName
+        Value="ContosoMotorsPictureLibrary" />
+      <Description
+        Value="" />
+    </EntityType.Attributes>
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <EntityProperty
+        Name="Name"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <DisplayName
+            Value="Name" />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Title"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <DisplayName
+            Value="Title" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <KeyProperty
+        Name="Id"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="ID" />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="ContentTypeID"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Content Type ID" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PictureWidth"
+        IsReadOnly="True"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Picture Width" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PictureHeight"
+        IsReadOnly="True"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Picture Height" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DatePictureTaken"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Date Picture Taken" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Description"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Description" />
+          <Description
+            Value="Used as alternative text for the picture." />
+          <NotSortable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Keywords"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Keywords" />
+          <Description
+            Value="For example: scenery, mountains, trees, nature" />
+          <NotSortable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="StockID"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <MaxLength
+            Value="255" />
+          <DisplayName
+            Value="StockID" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ContentType"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Content Type" />
+          <NotSortable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Created"
+        IsReadOnly="True"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Created" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Modified"
+        IsReadOnly="True"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Modified" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CopySource"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Copy Source" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ApprovalStatus"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Path"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Path" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="VirusStatus"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Virus Status" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="IsCurrentVersion"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Owshiddenversion"
+        IsReadOnly="True"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="owshiddenversion" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Version"
+        IsReadOnly="True"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Version" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="CreatedBy"
+        Association="ContosoMotorsPicture_UserInformationList"
+        FromEnd="ContosoMotorsPicture"
+        ToEnd="CreatedBy">
+        <NavigationProperty.Attributes>
+          <Hidden />
+        </NavigationProperty.Attributes>
+      </NavigationProperty>
+      <NavigationProperty
+        Name="ModifiedBy"
+        Association="ContosoMotorsPicture_UserInformationList1"
+        FromEnd="ContosoMotorsPicture"
+        ToEnd="ModifiedBy">
+        <NavigationProperty.Attributes>
+          <Hidden />
+        </NavigationProperty.Attributes>
+      </NavigationProperty>
+      <NavigationProperty
+        Name="CheckedOutTo"
+        Association="ContosoMotorsPicture_UserInformationList2"
+        FromEnd="ContosoMotorsPicture"
+        ToEnd="CheckedOutTo">
+        <NavigationProperty.Attributes>
+          <Hidden />
+        </NavigationProperty.Attributes>
+      </NavigationProperty>
+      <VirtualNavigationProperty
+        Name="InventoryItem"
+        FromEnd="ContosoMotorsPicture"
+        ToEnd="InventoryItem"
+        VirtualAssociation="InventoryItem_ContosoMotorsPicture" />
+      <EntityProperty
+        Name="ContactPhoto"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="Contact Photo" />
+          <NotSortable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="FullImageUrl"
+        PropertyType="Microsoft.LightSwitch.Extensions:WebAddress?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="FullImageUrl" />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ThumbnailUrl"
+        PropertyType="Microsoft.LightSwitch.Extensions:WebAddress?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <DisplayName
+            Value="ThumbnailUrl" />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="StockNo"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <MaxLength
+            Value="255" />
+          <DisplayName
+            Value="StockNo" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityContainer
+    Name="ContosoMotorsPictureLibrary">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="ContosoMotorsPictures"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="ContosoMotorsPicture">
+      <EntitySet.Attributes>
+        <SharePointList
+          Title="ContosoMotorsPictureLibrary"
+          Type="DocumentLibrary" />
+      </EntitySet.Attributes>
+    </EntitySet>
+    <QueryOperation
+      Name="ContosoMotorsPictures_Single"
+      ReturnType="ContosoMotorsPicture">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Id" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Id" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ContosoMotorsPictures" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType="Microsoft.LightSwitch:Int32?">
+        <QueryOperationParameter.Attributes>
+          <DisplayName
+            Value="ID" />
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="ContosoMotorsPictures_SingleOrDefault"
+      ReturnType="ContosoMotorsPicture">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Id" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Id" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ContosoMotorsPictures" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType="Microsoft.LightSwitch:Int32?">
+        <QueryOperationParameter.Attributes>
+          <DisplayName
+            Value="ID" />
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+  </EntityContainer>
+  <DataService
+    Name="ContosoMotorsPictureLibraryDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <EntitySetMapping
+      EntitySet="ContosoMotorsPictures">
+      <EntitySetMapping.Attributes>
+        <CsdlEntitySet
+          EntityTypeName="ContosoMotorsPictureLibraryItem"
+          Name="ContosoMotorsPictureLibrary"
+          EntityType="ContosoMotorsPicture" />
+        <CsdlProperty
+          Name="ContentTypeID"
+          Property="ContosoMotorsPicture/Properties[ContentTypeID]" />
+        <CsdlProperty
+          Name="Name"
+          Property="ContosoMotorsPicture/Properties[Name]" />
+        <CsdlProperty
+          Name="Title"
+          Property="ContosoMotorsPicture/Properties[Title]" />
+        <CsdlProperty
+          Name="PictureWidth"
+          Property="ContosoMotorsPicture/Properties[PictureWidth]" />
+        <CsdlProperty
+          Name="PictureHeight"
+          Property="ContosoMotorsPicture/Properties[PictureHeight]" />
+        <CsdlProperty
+          Name="DatePictureTaken"
+          Property="ContosoMotorsPicture/Properties[DatePictureTaken]" />
+        <CsdlProperty
+          Name="Description"
+          Property="ContosoMotorsPicture/Properties[Description]" />
+        <CsdlProperty
+          Name="Keywords"
+          Property="ContosoMotorsPicture/Properties[Keywords]" />
+        <CsdlProperty
+          Name="StockID"
+          Property="ContosoMotorsPicture/Properties[StockID]" />
+        <CsdlProperty
+          Name="ContactPhoto"
+          Property="ContosoMotorsPicture/Properties[ContactPhoto]" />
+        <CsdlProperty
+          Name="FullImageUrl"
+          Property="ContosoMotorsPicture/Properties[FullImageUrl]" />
+        <CsdlProperty
+          Name="ThumbnailUrl"
+          Property="ContosoMotorsPicture/Properties[ThumbnailUrl]" />
+        <CsdlProperty
+          Name="StockNo"
+          Property="ContosoMotorsPicture/Properties[StockNo]" />
+        <CsdlProperty
+          Name="Id"
+          Property="ContosoMotorsPicture/Properties[Id]" />
+        <CsdlProperty
+          Name="ContentType"
+          Property="ContosoMotorsPicture/Properties[ContentType]" />
+        <CsdlProperty
+          Name="Created"
+          Property="ContosoMotorsPicture/Properties[Created]" />
+        <CsdlProperty
+          Name="Modified"
+          Property="ContosoMotorsPicture/Properties[Modified]" />
+        <CsdlProperty
+          Name="CopySource"
+          Property="ContosoMotorsPicture/Properties[CopySource]" />
+        <CsdlProperty
+          Name="ApprovalStatus"
+          Property="ContosoMotorsPicture/Properties[ApprovalStatus]" />
+        <CsdlProperty
+          Name="Path"
+          Property="ContosoMotorsPicture/Properties[Path]" />
+        <CsdlProperty
+          Name="VirusStatus"
+          Property="ContosoMotorsPicture/Properties[VirusStatus]" />
+        <CsdlProperty
+          Name="IsCurrentVersion"
+          Property="ContosoMotorsPicture/Properties[IsCurrentVersion]" />
+        <CsdlProperty
+          Name="Owshiddenversion"
+          Property="ContosoMotorsPicture/Properties[Owshiddenversion]" />
+        <CsdlProperty
+          Name="Version"
+          Property="ContosoMotorsPicture/Properties[Version]" />
+        <CsdlProperty
+          Name="CreatedBy"
+          Property="ContosoMotorsPicture/Properties[CreatedBy]" />
+        <CsdlForeignKeyProperty
+          Name="CreatedById"
+          Property="UserInformationList/Properties[Id]" />
+        <CsdlProperty
+          Name="ModifiedBy"
+          Property="ContosoMotorsPicture/Properties[ModifiedBy]" />
+        <CsdlForeignKeyProperty
+          Name="ModifiedById"
+          Property="UserInformationList/Properties[Id]" />
+        <CsdlProperty
+          Name="CheckedOutTo"
+          Property="ContosoMotorsPicture/Properties[CheckedOutTo]" />
+        <CsdlForeignKeyProperty
+          Name="CheckedOutToId"
+          Property="UserInformationList/Properties[Id]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+  </DataService>
+</ServiceApplication>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityContainer
+    Name="ContosoMotorsPictureLibrary"
+    DataProvider="SharePointDataProvider">
+    <EntityContainer.Attributes>
+      <SupportsSharePointHostFeatures />
+      <Partial
+        IsPrimary="True" />
+    </EntityContainer.Attributes>
+    <SubmitOperation
+      Name="SaveChanges" />
+  </EntityContainer>
+  <DataService
+    Name="ContosoMotorsPictureLibraryDataService"
+    EntityContainer="ContosoMotorsPictureLibrary">
+    <DataService.Attributes>
+      <CsdlEntityContainer
+        Name="GWMDemoDeveloperDataContext" />
+      <Partial
+        IsPrimary="True" />
+    </DataService.Attributes>
+    <DataService.ConnectionProperties>
+      <ConnectionProperty
+        Name="ConnectionStringGuid"
+        Value="521790f4-eaec-47ba-b1e8-f82b1032a972" />
+      <ConnectionProperty
+        Name="ProjectMetadata"
+        Value="ContosoMotorsPictureLibrary" />
+      <ConnectionProperty
+        Name="ProjectMetadata"
+        Value="ContosoMotorsPictureLibrary" />
+      <ConnectionProperty
+        Name="ProjectMetadata"
+        Value="ContosoMotorsPictureLibrary" />
+    </DataService.ConnectionProperties>
+  </DataService>
+</ServiceApplication>
