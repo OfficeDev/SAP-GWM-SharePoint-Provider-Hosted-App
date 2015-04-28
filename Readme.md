@@ -8,10 +8,10 @@ Open the *.sln file in Visual Studio. In the Properties pane of Visual Studio, c
 
 **In this readme:**
 
-Prerequisites
-Key components of the sample
-Deploy the sample app
-Run and test the sample
+[Prerequisites](#Prerequisites)
+[Key components of the sample](#Key components of the sample)
+[Deploy the sample app](#Deploy the sample app)
+[Run and test the sample](#Run and test the sample)
 
 
 This sample app supports CRUD operations on SAP Data, and can be used to view pictures from and upload pictures to a SharePoint picture library. 
@@ -24,7 +24,7 @@ This sample requires the following:
 
  - Office Developer Tools for Visual Studio 2013 March, 2014, version or later. (This is included in Update 2 of Visual Studio 2013.)
 
- - A Office 365 Developer Site in an Office 365 domain that is associated with a Azure AD tenancy. See Sign up for an Office 365 Developer Site, set up your tools and environment, and start deploying apps or How to: Create a Developer Site within your existing Office 365 subscription.
+ - An Office 365 Developer Site in an Office 365 domain that is associated with a Azure AD tenancy. See Sign up for an Office 365 Developer Site, set up your tools and environment, and start deploying apps or How to: Create a Developer Site within your existing Office 365 subscription.
 
  - A Gateway for Microsoft (GWM) deployed and configured in Microsoft Azure. See the document SAP Gateway to Microsoft Implementation Guide.
 
