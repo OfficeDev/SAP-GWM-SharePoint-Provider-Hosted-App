@@ -8,10 +8,10 @@ Open the *.sln file in Visual Studio. In the Properties pane of Visual Studio, c
 
 **In this readme:**
 
-[Prerequisites](#Prerequisites)
-[Key components of the sample](#Key components of the sample)
-[Deploy the sample app](#Deploy the sample app)
-[Run and test the sample](#Run and test the sample)
+[Prerequisites](#Prerequisites)<BR>
+[Key components of the sample](#Key components of the sample)<BR>
+[Deploy the sample app](#Deploy the sample app)<BR>
+[Run and test the sample](#Run and test the sample)<BR>
 
 
 This sample app supports CRUD operations on SAP Data, and can be used to view pictures from and upload pictures to a SharePoint picture library. 
