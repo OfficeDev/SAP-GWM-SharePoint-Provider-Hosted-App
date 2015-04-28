@@ -35,25 +35,25 @@ This sample requires the following:
 #Key components of the sample
 The SellerDashboard solution includes eight projects, and it is divided into two categories: BoxXDataStudio and SellerDashboardStudio.
 
-BoxXDataStudio includes all of the components needed to interact with SAP Gateway for Microsoft. It contains four projects:
+ - BoxXDataStudio includes all of the components needed to interact with SAP Gateway for Microsoft. It contains four projects:
 
-AADAuthLib. This component is used to carry out the Azure AD authorization code flow, which uses a Singleton pattern. 
+     - AADAuthLib. This component is used to carry out the Azure AD authorization code flow, which uses a Singleton pattern. 
 
-BoxXDataService. This is a WCF RIA service, which is the interface used by the SellerDashboard server-side component hosted in Azure, and which consumes the SAP data source from SAP Gateway for Microsoft.
+     - BoxXDataService. This is a WCF RIA service, which is the interface used by the SellerDashboard server-side component hosted in Azure, and which consumes the SAP data source from SAP Gateway for Microsoft.
 
-CarInventoryBoxXDataOperation. This is the real CRUD implementation for BoxXDataService. The CRUD namespace is used to implement the CRUD operations, and the Util namespace is the helper code for the CRUD namespace. 
+     - CarInventoryBoxXDataOperation. This is the real CRUD implementation for BoxXDataService. The CRUD namespace is used to implement the CRUD operations, and the Util namespace is the helper code for the CRUD namespace. 
 
-CarInventoryModel. This is a library project that's used to implement the data model and utilities. The data model definition has to match the metadata of the OData endpoint that's used by SAP Gateway for Microsoft, which is based on the SAP data schema. BoxXDataService and CarInventoryBoxXDataOperation use it to convert the SAP database item into a car inventory instance. 
+     - CarInventoryModel. This is a library project that's used to implement the data model and utilities. The data model definition has to match the metadata of the OData endpoint that's used by SAP Gateway for Microsoft, which is based on the SAP data schema. BoxXDataService and CarInventoryBoxXDataOperation use it to convert the SAP database item into a car inventory instance. 
 
-SellerDashboardStudio includes standard LightSwitch SharePoint app components. It also contains four projects:
+ - SellerDashboardStudio includes standard LightSwitch SharePoint app components. It also contains four projects:
 
-SellerDashboard is the StartUp project, and it is used to publish the SellerDashboard app to the Azure website and its SharePoint app to the SharePoint developer site.
+     - SellerDashboard is the StartUp project, and it is used to publish the SellerDashboard app to the Azure website and its SharePoint app to the SharePoint developer site.
 
-SellerDashboard.HTMLClient. This component includes the screens, a custom control, and a photo upload control. 
+     - SellerDashboard.HTMLClient. This component includes the screens, a custom control, and a photo upload control. 
 
-SellerDashboard.Server. This component includes the WCF RIA data source, the SharePoint data source, and the photo-upload Web API. 
+     - SellerDashboard.Server. This component includes the WCF RIA data source, the SharePoint data source, and the photo-upload Web API. 
 
-SellerDashboard.SharePoint.This component is included after the LightSwitch solution to enable the SharePoint project. You can use this component to configure the SharePoint site used for the picture library and to set the required permission for the app. SellerDashboard needs to be granted the Full Control permission level on the SharePoint site that hosts the picture library. 
+     - SellerDashboard.SharePoint.This component is included after the LightSwitch solution to enable the SharePoint project. You can use this component to configure the SharePoint site used for the picture library and to set the required permission for the app. SellerDashboard needs to be granted the Full Control permission level on the SharePoint site that hosts the picture library. 
 
 #Deploy the sample app:
 
