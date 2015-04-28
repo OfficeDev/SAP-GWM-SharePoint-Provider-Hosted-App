@@ -6,7 +6,7 @@ Open the *.sln file in Visual Studio. In the Properties pane of Visual Studio, c
 
 **Last modified:** April 09, 2015
 
-**In this readme:**
+**Table of contents:**
 
 [Prerequisites](#Prerequisites)<BR>
 [Key components of the sample](#Key components of the sample)<BR>
@@ -57,7 +57,7 @@ The SellerDashboard solution includes eight projects, and it is divided into two
 
 #Deploy the sample app:
 
-For information about installing the Visual Studio solution and deploying the sample app, please see the companion article [How to: Create a complex provider-hosted app that uses the SAP Gateway](http://www.microsoft.com/en-us/download/details.aspx?id=44944).
+For information about installing the Visual Studio solution and deploying the sample app, please see the companion article [How to: Create a complex provider-hosted app that uses the SAP Gateway](https://msdn.microsoft.com/EN-US/library/dn947478.aspx).
 
 #Run and test the sample:
 
