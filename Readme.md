@@ -1,21 +1,17 @@
-Open the *.sln file in Visual Studio. In the Properties pane of Visual Studio, change the Site URL value to the absolute address of your development test site, for example, "http://MyDevServer/". Be sure to include the closing forward slash.
-
- 
 #Sample: Developing a Cloud Business App to access SAP Gateway for Microsoft 
 **Summary:** This sample creates a LightSwitch SharePoint provider-hosted app to access SAP data by means of SAP Gateway for Microsoft. The languages used are C# and JavaScript. The tools used to set up the sample are Visual Studio and the Azure Portal.
-
-**Last modified:** April 09, 2015
 
 **Table of contents:**
 
 [Prerequisites](#Prerequisites)<BR>
-[Key components of the sample](#Key components of the sample)<BR>
-[Deploy the sample app](#Deploy the sample app)<BR>
-[Run and test the sample](#Run and test the sample)<BR>
+[Key components of the sample](#KeyComponents)<BR>
+[Deploy the sample app](#DeployTheSampleApp)<BR>
+[Run and test the sample](#RunTestTheSample)<BR>
 
 
 This sample app supports CRUD operations on SAP Data, and can be used to view pictures from and upload pictures to a SharePoint picture library. 
 
+<a name="Prerequisites"></a>
 #Prerequisites:
 
 This sample requires the following:
@@ -32,6 +28,7 @@ This sample requires the following:
 
  - An SAP OData endpoint with sample data in it. See the document [SAP Gateway to Microsoft Implementation Guide](http://go.microsoft.com/fwlink/?LinkId=512338).
 
+<a name="KeyComponents"></a>
 #Key components of the sample
 The SellerDashboard solution includes eight projects, and it is divided into two categories: BoxXDataStudio and SellerDashboardStudio.
 
@@ -55,11 +52,15 @@ The SellerDashboard solution includes eight projects, and it is divided into two
 
      - **SellerDashboard.SharePoint.** This component is included after the LightSwitch solution to enable the SharePoint project. You can use this component to configure the SharePoint site used for the picture library and to set the required permission for the app. SellerDashboard needs to be granted the Full Control permission level on the SharePoint site that hosts the picture library. 
 
+<a name="DeployTheSampleApp"></a>
 #Deploy the sample app:
 
 For information about installing the Visual Studio solution and deploying the sample app, please see the companion article [How to: Create a complex provider-hosted app that uses the SAP Gateway](https://msdn.microsoft.com/EN-US/library/dn947478.aspx).
 
+<a name="RunTestTheSample"></a>
 #Run and test the sample:
+
+Open the *.sln file in Visual Studio. In the Properties pane of Visual Studio, change the Site URL value to the absolute address of your development test site, for example, "http://MyDevServer/". Be sure to include the closing forward slash.
 
 You can test the sample with the Visual Studio debugger.
 
@@ -71,3 +72,6 @@ You can test the sample with the Visual Studio debugger.
 
 4. The app will launch and SharePoint will redirect to the Default.aspx page at your "localhost:<port>" domain. After a brief delay while the access token is being obtained, the Default.aspx page opens. Verify that the SAP data appears.
 
+## Copyright ##
+
+Copyright (c) Microsoft. All rights reserved.
