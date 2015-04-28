@@ -16,7 +16,7 @@ Run and test the sample
 
 This sample app supports CRUD operations on SAP Data, and can be used to view pictures from and upload pictures to a SharePoint picture library. 
 
-Prerequisites:
+#Prerequisites:
 
 This sample requires the following:
 
@@ -32,7 +32,7 @@ An organization account in Microsoft Azure. See Create an organizational user ac
 
 A SAP OData endpoint with sample data in it. See the document SAP Gateway to Microsoft Implementation Guide.
 
-Key components of the sample
+#Key components of the sample
 The SellerDashboard solution includes eight projects, and it is divided into two categories: BoxXDataStudio and SellerDashboardStudio.
 
 BoxXDataStudio includes all of the components needed to interact with SAP Gateway for Microsoft. It contains four projects:
@@ -55,11 +55,11 @@ SellerDashboard.Server. This component includes the WCF RIA data source, the Sha
 
 SellerDashboard.SharePoint.This component is included after the LightSwitch solution to enable the SharePoint project. You can use this component to configure the SharePoint site used for the picture library and to set the required permission for the app. SellerDashboard needs to be granted the Full Control permission level on the SharePoint site that hosts the picture library. 
 
-Deploy the sample app:
+#Deploy the sample app:
 
 For information about installing the Visual Studio solution and deploying the sample app, please see the companion article How to: Create a complex provider-hosted app that uses the SAP Gateway.
 
-Run and test the sample:
+#Run and test the sample:
 
 You can test the sample with the Visual Studio debugger.
 
