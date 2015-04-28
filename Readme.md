@@ -1,5 +1,5 @@
 #Sample: Developing a Cloud Business App to access SAP Gateway for Microsoft 
-**Summary:** This sample creates a LightSwitch SharePoint provider-hosted app to access SAP data by means of SAP Gateway for Microsoft. The languages used are C# and JavaScript. The tools used to set up the sample are Visual Studio and the Azure Portal.
+**Summary:** This sample creates a LightSwitch SharePoint provider-hosted app to access SAP data by means of SAP Gateway for Microsoft. The languages used are C# and JavaScript. The tools used to set up the sample are Visual Studio and the Azure Portal. This sample app supports CRUD operations on SAP Data, and can be used to view pictures from and upload pictures to a SharePoint picture library. 
 
 **Table of contents:**
 
@@ -7,9 +7,6 @@
 [Key components of the sample](#KeyComponents)<BR>
 [Deploy the sample app](#DeployTheSampleApp)<BR>
 [Run and test the sample](#RunTestTheSample)<BR>
-
-
-This sample app supports CRUD operations on SAP Data, and can be used to view pictures from and upload pictures to a SharePoint picture library. 
 
 <a name="Prerequisites"></a>
 #Prerequisites:
