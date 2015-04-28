@@ -24,7 +24,7 @@ This sample requires the following:
 
  - Office Developer Tools for Visual Studio 2013 March, 2014, version or later. (This is included in Update 2 of Visual Studio 2013.)
 
- - An Office 365 Developer Site in an Office 365 domain that is associated with a Azure AD tenancy. See Sign up for an Office 365 Developer Site, set up your tools and environment, and start deploying apps or How to: Create a Developer Site within your existing Office 365 subscription.
+ - An Office 365 Developer Site in an Office 365 domain that is associated with a Azure AD tenancy. See [Sign up for an Office 365 Developer Site, set up your tools and environment, and start deploying apps](http://msdn.microsoft.com/en-us/library/office/fp179924(v=office.15).aspx) or [How to: Create a Developer Site within your existing Office 365 subscription](http://msdn.microsoft.com/en-us/library/office/jj692554(v=office.15).aspx).
 
  - A Gateway for Microsoft (GWM) deployed and configured in Microsoft Azure. See the document SAP Gateway to Microsoft Implementation Guide.
 
