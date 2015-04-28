@@ -26,11 +26,11 @@ This sample requires the following:
 
  - An Office 365 Developer Site in an Office 365 domain that is associated with a Azure AD tenancy. See [Sign up for an Office 365 Developer Site, set up your tools and environment, and start deploying apps](http://msdn.microsoft.com/en-us/library/office/fp179924(v=office.15).aspx) or [How to: Create a Developer Site within your existing Office 365 subscription](http://msdn.microsoft.com/en-us/library/office/jj692554(v=office.15).aspx).
 
- - A Gateway for Microsoft (GWM) deployed and configured in Microsoft Azure. See the document SAP Gateway to Microsoft Implementation Guide.
+ - A Gateway for Microsoft (GWM) deployed and configured in Microsoft Azure. See the document [SAP Gateway to Microsoft Implementation Guide](http://go.microsoft.com/fwlink/?LinkId=512338).
 
- - An organization account in Microsoft Azure. See Create an organizational user account.
+ - An organization account in Microsoft Azure. See [Create an organizational user account](http://www.microsoft.com/en-us/download/details.aspx?id=44944).
 
- - An SAP OData endpoint with sample data in it. See the document SAP Gateway to Microsoft Implementation Guide.
+ - An SAP OData endpoint with sample data in it. See the document [SAP Gateway to Microsoft Implementation Guide](http://go.microsoft.com/fwlink/?LinkId=512338).
 
 #Key components of the sample
 The SellerDashboard solution includes eight projects, and it is divided into two categories: BoxXDataStudio and SellerDashboardStudio.
@@ -57,7 +57,7 @@ The SellerDashboard solution includes eight projects, and it is divided into two
 
 #Deploy the sample app:
 
-For information about installing the Visual Studio solution and deploying the sample app, please see the companion article How to: Create a complex provider-hosted app that uses the SAP Gateway.
+For information about installing the Visual Studio solution and deploying the sample app, please see the companion article [How to: Create a complex provider-hosted app that uses the SAP Gateway](http://www.microsoft.com/en-us/download/details.aspx?id=44944).
 
 #Run and test the sample:
 
