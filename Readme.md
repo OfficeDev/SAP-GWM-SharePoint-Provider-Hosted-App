@@ -1,12 +1,12 @@
 Open the *.sln file in Visual Studio. In the Properties pane of Visual Studio, change the Site URL value to the absolute address of your development test site, for example, "http://MyDevServer/". Be sure to include the closing forward slash.
 
  
-Sample: Developing a Cloud Business App to access SAP Gateway for Microsoft 
-Summary:  This sample creates a LightSwitch SharePoint provider-hosted app to access SAP data by means of SAP Gateway for Microsoft. The languages used are C# and JavaScript. The tools used to set up the sample are Visual Studio and the Azure Portal.
+#Sample: Developing a Cloud Business App to access SAP Gateway for Microsoft 
+**Summary:** This sample creates a LightSwitch SharePoint provider-hosted app to access SAP data by means of SAP Gateway for Microsoft. The languages used are C# and JavaScript. The tools used to set up the sample are Visual Studio and the Azure Portal.
 
-Last modified: April 09, 2015
+**Last modified:** April 09, 2015
 
-In this readme:
+**In this readme:**
 
 Prerequisites
 Key components of the sample
@@ -20,17 +20,17 @@ This sample app supports CRUD operations on SAP Data, and can be used to view pi
 
 This sample requires the following:
 
-Microsoft Visual Studio 2013 Update 4 or later.
+ - Microsoft Visual Studio 2013 Update 4 or later.
 
-Office Developer Tools for Visual Studio 2013 March, 2014, version or later. (This is included in Update 2 of Visual Studio 2013.)
+ - Office Developer Tools for Visual Studio 2013 March, 2014, version or later. (This is included in Update 2 of Visual Studio 2013.)
 
-A Office 365 Developer Site in an Office 365 domain that is associated with a Azure AD tenancy. See Sign up for an Office 365 Developer Site, set up your tools and environment, and start deploying apps or How to: Create a Developer Site within your existing Office 365 subscription.
+ - A Office 365 Developer Site in an Office 365 domain that is associated with a Azure AD tenancy. See Sign up for an Office 365 Developer Site, set up your tools and environment, and start deploying apps or How to: Create a Developer Site within your existing Office 365 subscription.
 
-A Gateway for Microsoft (GWM) deployed and configured in Microsoft Azure. See the document SAP Gateway to Microsoft Implementation Guide.
+ - A Gateway for Microsoft (GWM) deployed and configured in Microsoft Azure. See the document SAP Gateway to Microsoft Implementation Guide.
 
-An organization account in Microsoft Azure. See Create an organizational user account.
+ - An organization account in Microsoft Azure. See Create an organizational user account.
 
-A SAP OData endpoint with sample data in it. See the document SAP Gateway to Microsoft Implementation Guide.
+ - An SAP OData endpoint with sample data in it. See the document SAP Gateway to Microsoft Implementation Guide.
 
 #Key components of the sample
 The SellerDashboard solution includes eight projects, and it is divided into two categories: BoxXDataStudio and SellerDashboardStudio.
