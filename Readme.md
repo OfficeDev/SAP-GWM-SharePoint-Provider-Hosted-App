@@ -6,7 +6,6 @@
 [Prerequisites](#Prerequisites)<BR>
 [Key components of the sample](#KeyComponents)<BR>
 [Deploy the sample app](#DeployTheSampleApp)<BR>
-[Run and test the sample](#RunTestTheSample)<BR>
 
 <a name="Prerequisites"></a>
 #Prerequisites:
@@ -53,21 +52,6 @@ The SellerDashboard solution includes eight projects, and it is divided into two
 #Deploy the sample app:
 
 For information about installing the Visual Studio solution and deploying the sample app, please see the companion article [How to: Create a complex provider-hosted app that uses the SAP Gateway](https://msdn.microsoft.com/EN-US/library/dn947478.aspx).
-
-<a name="RunTestTheSample"></a>
-#Run and test the sample:
-
-Open the *.sln file in Visual Studio. In the Properties pane of Visual Studio, change the Site URL value to the absolute address of your development test site, for example, "http://MyDevServer/". Be sure to include the closing forward slash.
-
-You can test the sample with the Visual Studio debugger.
-
-1. Press F5 in Visual Studio.
-
-2. The first time that you use F5, you may be prompted to login to the Office 365 Developer Site that you are using. Use the site administrator credentials.
-
-3. The first time that you use F5, you are prompted to grant permissions to the app. Click Trust It.
-
-4. The app will launch and SharePoint will redirect to the Default.aspx page at your "localhost:<port>" domain. After a brief delay while the access token is being obtained, the Default.aspx page opens. Verify that the SAP data appears.
 
 ## Copyright ##
 
