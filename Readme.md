@@ -1,4 +1,7 @@
-#Sample: Developing a Cloud Business App to access SAP Gateway for Microsoft 
+# Sample: Developing a Cloud Business App to access SAP Gateway for Microsoft 
+
+> SharePoint add-in model is considered as a legacy option for extending SharePoint user interface. Please see [SharePoint Framework documentation](https://aka.ms/spfx) and the [SharePoint Framework samples](https://aka.ms/spfx-webparts) for the future proven option to extend SharePoint Online. Possible backend services should be using Azure Active Directly based registration and related app models.
+
 **Summary:** This sample creates a LightSwitch SharePoint provider-hosted app to access SAP data by means of SAP Gateway for Microsoft. The languages used are C# and JavaScript. The tools used to set up the sample are Visual Studio and the Azure Portal. This sample app supports CRUD operations on SAP Data, and can be used to view pictures from and upload pictures to a SharePoint picture library. 
 
 **Table of contents:**
@@ -8,7 +11,7 @@
 [Deploy the sample app](#DeployTheSampleApp)<BR>
 
 <a name="Prerequisites"></a>
-#Prerequisites:
+# Prerequisites:
 
 This sample requires the following:
 
@@ -25,7 +28,7 @@ This sample requires the following:
  - An SAP OData endpoint with sample data in it. See the document [SAP Gateway to Microsoft Implementation Guide](http://go.microsoft.com/fwlink/?LinkId=512338).
 
 <a name="KeyComponents"></a>
-#Key components of the sample
+# Key components of the sample
 The SellerDashboard solution includes eight projects, and it is divided into two categories: BoxXDataStudio and SellerDashboardStudio.
 
  - **BoxXDataStudio** includes all of the components needed to interact with SAP Gateway for Microsoft. It contains four projects:
@@ -49,7 +52,7 @@ The SellerDashboard solution includes eight projects, and it is divided into two
      - **SellerDashboard.SharePoint.** This component is included after the LightSwitch solution to enable the SharePoint project. You can use this component to configure the SharePoint site used for the picture library and to set the required permission for the app. SellerDashboard needs to be granted the Full Control permission level on the SharePoint site that hosts the picture library. 
 
 <a name="DeployTheSampleApp"></a>
-#Deploy the sample app:
+# Deploy the sample app:
 
 For information about installing the Visual Studio solution and deploying the sample app, please see the companion article [How to: Create a complex provider-hosted app that uses the SAP Gateway](https://msdn.microsoft.com/EN-US/library/dn947478.aspx).
 
